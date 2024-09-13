@@ -1,0 +1,7 @@
+<div
+  class="flex w-6 h-6 border border-red-500 items-center justify-center cursor-pointer relative select-none aspect-square"
+  (click)="toggle()"
+>
+  <span class="text-red-500">{{ number }}</span>
+  <span class="absolute text-black text-2xl" *ngIf="isChecked">X</span>
+</div>
