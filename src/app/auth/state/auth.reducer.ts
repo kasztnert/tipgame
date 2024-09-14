@@ -17,5 +17,9 @@ export const authReducer = createReducer(
     logonError: 'Invalid user ID or password!',
   })),
   // on logoff, clear current user and logon error
-  on(logoff, (state) => ({ ...state, currentUser: null, logonError: null }))
+  on(logoff, (state) => ({ 
+    ...state, 
+    currentUser: null, 
+    logonError: null 
+  }))
 );
